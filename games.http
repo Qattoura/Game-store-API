@@ -1,0 +1,31 @@
+﻿GET http://localhost:5005/games
+
+###
+
+GET http://localhost:5005/games/7
+
+###
+POST http://localhost:5005/games
+Content-Type: application/json
+
+{
+    "name": "red dead redemption 2",
+    "genreId": 2,
+    "price": 60,
+    "releaseDate": "2023-10-10"
+}
+
+###
+
+PUT http://localhost:5005/games/7
+Content-Type: application/json
+
+{
+    "name": "NieR Automata v2.0",
+    "genreId": "2",
+    "price": 60.00,
+    "releaseDate": "2017-05-17"
+}
+
+###
+DELETE http://localhost:5005/games/8
